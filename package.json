@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch",
-    "build": "tailwindcss/cli -i ./public/input.css -o ./public/output.css --minify"
+    "dev": "tailwindcss -i ./public/input.css -o ./public/output.css --watch",
+    "build": "tailwindcss -i ./public/input.css -o ./public/output.css --minify"
   },
   "keywords": [],
   "author": "",
