@@ -13,7 +13,7 @@
 <br>
 
 <p align="center">
-  <img alt="Screenshot do site portfolio.fantinel.dev.br" src="./assets/img/portfolio_thumb.png" width="100%">
+  <img alt="Screenshot do site portfolio.fantinel.dev.br" src="./public/assets/img/portfolio_thumb.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
