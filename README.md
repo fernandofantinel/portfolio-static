@@ -18,18 +18,18 @@
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Esse projeto foi desenvolvido com as seguintes ferramentas:
 
 - HTML
 - Tailwind CSS
 - JavaScript
-- Git e Github
+- Git e GitHub
 
 ## 💻 Projeto
 
 Site pessoal para exibir os projetos realizados até o momento.
 
-- [Acesse o projeto finalizado, online](https://portfolio.fantinel.dev.br)
+- [Acesse o projeto](https://portfolio.fantinel.dev.br)
 
 ## 📝 Licença
 
