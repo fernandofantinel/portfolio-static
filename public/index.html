@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -8,32 +8,32 @@
     <script src="./modal.js" defer></script>
   </head>
 
-  <body class="bg-[#16181d] text-gray-200 flex flex-col overflow-x-hidden">
+  <body class="flex flex-col overflow-x-hidden bg-[#16181d] text-gray-200">
     <header
-      class="md:bg-[url('./assets/img/background_intro.png')] md:bg-cover md:bg-center md:h-screen"
+      class="md:h-screen md:bg-[url('./assets/img/background_intro.png')] md:bg-cover md:bg-center"
     >
       <!-- ====== Intro ====== -->
-      <div class="pt-20 flex justify-center">
+      <div class="flex justify-center pt-20">
         <img
-          class="w-56 h-56 rounded-full border-4 border-main-red object-cover"
+          class="border-main-red h-56 w-56 rounded-full border-4 object-cover"
           src="./assets/img/photo3_denoised_refined.webp"
           alt="Foto de Fernando Fantinel"
         />
       </div>
-      <div class="flex flex-col gap-2 mt-10 px-5">
+      <div class="mt-10 flex flex-col gap-2 px-5">
         <div class="flex flex-col gap-2">
-          <h2 class="flex justify-center items-center md:text-2xl">
+          <h2 class="flex items-center justify-center md:text-2xl">
             Olá, meu nome é
             <span class="text-main-red">&nbsp;Fernando Fantinel&nbsp;</span>
             e sou
           </h2>
           <h1
-            class="flex justify-center text-center text-gray-100 font-bold text-4xl leading-[1.2] md:text-6xl"
+            class="flex justify-center text-center text-4xl font-bold leading-[1.2] text-gray-100 md:text-6xl"
           >
             Desenvolvedor PHP
           </h1>
         </div>
-        <p class="text-center mt-5 md:max-w-prose md:mx-auto leading-relaxed">
+        <p class="mt-5 text-center leading-relaxed md:mx-auto md:max-w-prose">
           Transformo necessidades em aplicações reais, evolventes e funcionais.
           Desenvolvo sistemas através da minha paixão pela tecnologia,
           contribuindo com soluções inovadoras e eficazes para desafios
@@ -43,30 +43,30 @@
 
       <!-- ====== Skills ====== -->
       <div
-        class="flex flex-wrap gap-2 justify-center max-w-[320px] sm:max-w-full mx-auto mt-10"
+        class="mx-auto mt-10 flex max-w-[320px] flex-wrap justify-center gap-2 sm:max-w-full"
       >
         <div
-          class="bg-indigo-700 text-gray-500 px-3 py-1 rounded-full font-bold leading-[1.2]"
+          class="rounded-full bg-indigo-700 px-3 py-1 font-bold leading-[1.2] text-gray-500"
         >
           PHP
         </div>
         <div
-          class="bg-red-400 text-gray-500 px-3 py-1 rounded-full font-bold leading-[1.2]"
+          class="rounded-full bg-red-400 px-3 py-1 font-bold leading-[1.2] text-gray-500"
         >
           Laravel
         </div>
         <div
-          class="bg-yellow-300 text-gray-500 px-3 py-1 rounded-full font-bold leading-[1.2]"
+          class="rounded-full bg-yellow-300 px-3 py-1 font-bold leading-[1.2] text-gray-500"
         >
           JavaScript
         </div>
         <div
-          class="bg-orange-500 text-gray-500 px-3 py-1 rounded-full font-bold leading-[1.2]"
+          class="rounded-full bg-orange-500 px-3 py-1 font-bold leading-[1.2] text-gray-500"
         >
           HTML
         </div>
         <div
-          class="bg-main-blue text-gray-500 px-3 py-1 rounded-full font-bold leading-[1.2]"
+          class="bg-main-blue rounded-full px-3 py-1 font-bold leading-[1.2] text-gray-500"
         >
           Tailwind CSS
         </div>
@@ -75,28 +75,28 @@
 
     <main>
       <!-- ====== Projects ====== -->
-      <section class="flex flex-col gap-2 mt-14 items-center">
+      <section class="mt-14 flex flex-col items-center gap-2">
         <h2 class="text-main-red text-xl leading-[1.2]">Meu trabalho</h2>
-        <p class="text-gray-100 text-2xl font-bold leading-[1.2]">
+        <p class="text-2xl font-bold leading-[1.2] text-gray-100">
           Veja os projetos em destaque
         </p>
       </section>
 
       <!-- ====== Project cars ====== -->
-      <section class="grid grid-cols-1 mt-14 gap-10 md:grid-cols-2 md:px-10">
+      <section class="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 md:px-10">
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
-              class="openModal thumb rounded-[8px] cursor-pointer"
+              class="openModal thumb cursor-pointer rounded-[8px]"
               src="./assets/img/portfolio_thumb.png"
               alt="Foto do projeto do portfólio"
             />
           </div>
           <div class="mt-4">
             <div class="flex flex-col justify-center gap-2">
-              <div class="flex justify-center items-center gap-4">
+              <div class="flex items-center justify-center gap-4">
                 <a href="https://portfolio.fantinel.dev.br" target="_blank">
-                  <span class="text-gray-100 font-bold leading-tight"
+                  <span class="font-bold leading-tight text-gray-100"
                     >Portfólio</span
                   >
                 </a>
@@ -112,24 +112,24 @@
                 </a>
               </div>
               <p
-                class="flex justify-center text-gray-200 leading-normal px-10 text-center"
+                class="flex justify-center px-10 text-center leading-normal text-gray-200"
               >
                 Site para exibir os projetos realizados até o momento.
               </p>
             </div>
             <div
-              class="flex flex-wrap justify-center gap-2 max-w-[240px] sm:max-w-full mx-auto mt-5"
+              class="mx-auto mt-5 flex max-w-[240px] flex-wrap justify-center gap-2 sm:max-w-full"
             >
               <div class="bg-main-blue rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >Tailwind CSS</span
                 >
               </div>
-              <div class="bg-orange-500 rounded-full items-center px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]">HTML</span>
+              <div class="items-center rounded-full bg-orange-500 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500">HTML</span>
               </div>
-              <div class="bg-yellow-300 rounded-full items-center px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+              <div class="items-center rounded-full bg-yellow-300 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >JavaScript</span
                 >
               </div>
@@ -140,19 +140,19 @@
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
-              class="openModal thumb rounded-[8px] cursor-pointer"
+              class="openModal thumb cursor-pointer rounded-[8px]"
               src="./assets/img/clone-tabnews_thumb.png"
               alt="Foto do projeto Clone Tabnews"
             />
           </div>
           <div class="mt-4">
             <div class="flex flex-col gap-2">
-              <div class="flex justify-center items-center gap-4">
+              <div class="flex items-center justify-center gap-4">
                 <a
                   href="https://clone-tabnews.fantinel.dev.br/api/v1/status"
                   target="_blank"
                 >
-                  <span class="text-gray-100 font-bold leading-tight"
+                  <span class="font-bold leading-tight text-gray-100"
                     >Clone Tabnews</span
                   >
                 </a>
@@ -168,34 +168,34 @@
                 </a>
               </div>
               <p
-                class="flex justify-center text-gray-200 leading-normal px-10 text-center"
+                class="flex justify-center px-10 text-center leading-normal text-gray-200"
               >
                 Recriação do zero do tabnews.com.br. Projeto feito no curso.dev.
               </p>
             </div>
             <div
-              class="flex flex-wrap justify-center gap-2 max-w-[320px] sm:max-w-full mx-auto mt-5"
+              class="mx-auto mt-5 flex max-w-[320px] flex-wrap justify-center gap-2 sm:max-w-full"
             >
-              <div class="bg-yellow-300 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+              <div class="rounded-full bg-yellow-300 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >JavaScript</span
                 >
               </div>
-              <div class="bg-green-800 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+              <div class="rounded-full bg-green-800 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >NodeJS</span
                 >
               </div>
-              <div class="bg-zinc-200 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+              <div class="rounded-full bg-zinc-200 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >NextJS</span
                 >
               </div>
-              <div class="bg-rose-400 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]">Jest</span>
+              <div class="rounded-full bg-rose-400 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500">Jest</span>
               </div>
-              <div class="bg-slate-700 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+              <div class="rounded-full bg-slate-700 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >PostgreSQL</span
                 >
               </div>
@@ -206,16 +206,16 @@
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
-              class="openModal thumb rounded-[8px] cursor-pointer"
+              class="openModal thumb cursor-pointer rounded-[8px]"
               src="./assets/img/devlinks_thumb.png"
               alt="Foto da página pessoal Devlinks"
             />
           </div>
           <div class="mt-4">
             <div class="flex flex-col gap-2">
-              <div class="flex justify-center items-center gap-4">
+              <div class="flex items-center justify-center gap-4">
                 <a href="https://fantinel.dev.br/" target="_blank">
-                  <span class="text-gray-100 font-bold leading-tight"
+                  <span class="font-bold leading-tight text-gray-100"
                     >Página pessoal</span
                   >
                 </a>
@@ -230,21 +230,21 @@
                   />
                 </a>
               </div>
-              <p class="flex justify-center text-gray-200 leading-normal">
+              <p class="flex justify-center leading-normal text-gray-200">
                 Página pessoal para exibição dos contatos.
               </p>
             </div>
             <div
-              class="flex flex-wrap justify-center gap-2 max-w-[240px] sm:max-w-full mx-auto mt-5"
+              class="mx-auto mt-5 flex max-w-[240px] flex-wrap justify-center gap-2 sm:max-w-full"
             >
               <div class="bg-main-blue rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]">CSS</span>
+                <span class="font-bold leading-[1.2] text-gray-500">CSS</span>
               </div>
-              <div class="bg-orange-500 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]">HTML</span>
+              <div class="rounded-full bg-orange-500 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500">HTML</span>
               </div>
-              <div class="bg-yellow-300 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+              <div class="rounded-full bg-yellow-300 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >JavaScript</span
                 >
               </div>
@@ -255,16 +255,16 @@
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
-              class="openModal thumb rounded-[8px] cursor-pointer"
+              class="openModal thumb cursor-pointer rounded-[8px]"
               src="./assets/img/karaoke-roulette_thumb.png"
               alt="Foto da página Karaoke Roulette"
             />
           </div>
           <div class="mt-4">
             <div class="flex flex-col gap-2">
-              <div class="flex justify-center items-center gap-4">
+              <div class="flex items-center justify-center gap-4">
                 <a href="https://karaoke-roulette.vercel.app/" target="_blank">
-                  <span class="text-gray-100 font-bold leading-tight"
+                  <span class="font-bold leading-tight text-gray-100"
                     >Karaoke Roulette</span
                   >
                 </a>
@@ -280,32 +280,32 @@
                 </a>
               </div>
               <p
-                class="flex justify-center text-gray-200 leading-normal px-10 text-center"
+                class="flex justify-center px-10 text-center leading-normal text-gray-200"
               >
                 Projeto criado para se divertir cantando com amigos.
               </p>
             </div>
             <div
-              class="flex flex-wrap gap-2 mt-5 px-5 justify-center sm:max-w-full mx-auto"
+              class="mx-auto mt-5 flex flex-wrap justify-center gap-2 px-5 sm:max-w-full"
             >
-              <div class="bg-sky-400 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+              <div class="rounded-full bg-sky-400 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >ReactJS</span
                 >
               </div>
-              <div class="bg-violet-500 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]">Vite</span>
+              <div class="rounded-full bg-violet-500 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500">Vite</span>
               </div>
-              <div class="bg-yellow-300 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]"
+              <div class="rounded-full bg-yellow-300 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500"
                   >JavaScript</span
                 >
               </div>
-              <div class="bg-orange-500 rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]">HTML</span>
+              <div class="rounded-full bg-orange-500 px-3 py-1">
+                <span class="font-bold leading-[1.2] text-gray-500">HTML</span>
               </div>
               <div class="bg-main-blue rounded-full px-3 py-1">
-                <span class="text-gray-500 font-bold leading-[1.2]">CSS</span>
+                <span class="font-bold leading-[1.2] text-gray-500">CSS</span>
               </div>
             </div>
           </div>
@@ -314,21 +314,21 @@
     </main>
 
     <footer
-      class="md:bg-[url('./assets/img/background_contacts.png')] md:bg-cover md:bg-center md:h-screen"
+      class="md:h-screen md:bg-[url('./assets/img/background_contacts.png')] md:bg-cover md:bg-center"
     >
       <!-- ====== Contacts ====== -->
       <section class="mt-10 flex flex-col items-center gap-2 md:mt-36">
         <h2 class="text-main-red text-xl leading-[1.2]">Contato</h2>
-        <p class="text-gray-100 font-bold text-2xl">Gostou do meu trabalho?</p>
-        <p class="text-base text-gray-200 leading-[1.4] mt-5 text-center px-4">
+        <p class="text-2xl font-bold text-gray-100">Gostou do meu trabalho?</p>
+        <p class="mt-5 px-4 text-center text-base leading-[1.4] text-gray-200">
           Entre em contato ou acompanhe minhas redes sociais!
         </p>
       </section>
       <section
-        class="flex flex-col gap-4 mt-10 pb-20 px-4 mx-auto w-full md:max-w-md"
+        class="mx-auto mt-10 flex w-full flex-col gap-4 px-4 pb-20 md:max-w-md"
       >
         <div
-          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400"
+          class="flex items-center justify-between rounded-[8px] bg-gray-400 px-4 py-4"
         >
           <div class="flex items-center gap-2">
             <img src="./assets/img/linkedin-logo.svg" alt="Logo do Linkedin" />
@@ -349,7 +349,7 @@
         </div>
 
         <div
-          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400"
+          class="flex items-center justify-between rounded-[8px] bg-gray-400 px-4 py-4"
         >
           <div class="flex items-center gap-2">
             <img src="./assets/img/github-logo.svg" alt="Logo do GitHub" />
@@ -367,7 +367,7 @@
         </div>
 
         <div
-          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400"
+          class="flex items-center justify-between rounded-[8px] bg-gray-400 px-4 py-4"
         >
           <div class="flex items-center gap-2">
             <img
@@ -390,11 +390,11 @@
     </footer>
 
     <!-- ====== Modal ====== -->
-    <div id="modal" class="closeModal hidden fixed inset-0 bg-opacity-50">
-      <div class="w-full h-full relative bg-gray-950 pt-56 md:pt-0">
+    <div id="modal" class="closeModal fixed inset-0 hidden bg-opacity-50">
+      <div class="relative h-full w-full bg-gray-950 pt-56 md:pt-0">
         <button
           id="closeModal"
-          class="absolute top-2 right-10 text-gray-100 hover:text-red-600 text-2xl font-bold cursor-pointer"
+          class="absolute right-10 top-2 cursor-pointer text-2xl font-bold text-gray-100 hover:text-red-600"
         >
           &times;
         </button>
