@@ -9,7 +9,9 @@
   </head>
 
   <body class="bg-[#16181d] text-gray-200 flex flex-col overflow-x-hidden">
-    <header>
+    <header
+      class="md:bg-[url('./assets/img/background_intro.png')] md:bg-cover md:bg-center md:h-screen"
+    >
       <!-- ====== Intro ====== -->
       <div class="pt-20 flex justify-center">
         <img
@@ -20,18 +22,18 @@
       </div>
       <div class="flex flex-col gap-2 mt-10 px-5">
         <div class="flex flex-col gap-2">
-          <h2 class="flex justify-center items-center font-bold">
+          <h2 class="flex justify-center items-center md:text-2xl">
             Olá, meu nome é
             <span class="text-main-red">&nbsp;Fernando Fantinel&nbsp;</span>
             e sou
           </h2>
           <h1
-            class="flex justify-center text-center text-gray-100 font-bold text-4xl leading-[1.2]"
+            class="flex justify-center text-center text-gray-100 font-bold text-4xl leading-[1.2] md:text-6xl"
           >
             Desenvolvedor PHP
           </h1>
         </div>
-        <p class="flex text-center mt-5">
+        <p class="text-center mt-5 md:max-w-prose md:mx-auto leading-relaxed">
           Transformo necessidades em aplicações reais, evolventes e funcionais.
           Desenvolvo sistemas através da minha paixão pela tecnologia,
           contribuindo com soluções inovadoras e eficazes para desafios
@@ -40,7 +42,9 @@
       </div>
 
       <!-- ====== Skills ====== -->
-      <div class="flex gap-2 justify-center flex-wrap mt-10">
+      <div
+        class="flex flex-wrap gap-2 justify-center max-w-[320px] sm:max-w-full mx-auto mt-10"
+      >
         <div
           class="bg-indigo-700 text-gray-500 px-3 py-1 rounded-full font-bold leading-[1.2]"
         >
@@ -79,7 +83,7 @@
       </section>
 
       <!-- ====== Project cars ====== -->
-      <section class="grid grid-cols-1 mt-14 gap-10">
+      <section class="grid grid-cols-1 mt-14 gap-10 md:grid-cols-2 md:px-10">
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
@@ -170,7 +174,7 @@
               </p>
             </div>
             <div
-              class="flex flex-wrap justify-center gap-2 max-w-[240px] sm:max-w-full mx-auto mt-5"
+              class="flex flex-wrap justify-center gap-2 max-w-[320px] sm:max-w-full mx-auto mt-5"
             >
               <div class="bg-yellow-300 rounded-full px-3 py-1">
                 <span class="text-gray-500 font-bold leading-[1.2]"
@@ -309,18 +313,22 @@
       </section>
     </main>
 
-    <footer>
+    <footer
+      class="md:bg-[url('./assets/img/background_contacts.png')] md:bg-cover md:bg-center md:h-screen"
+    >
       <!-- ====== Contacts ====== -->
-      <section class="mt-10 flex flex-col items-center gap-2">
+      <section class="mt-10 flex flex-col items-center gap-2 md:mt-36">
         <h2 class="text-main-red text-xl leading-[1.2]">Contato</h2>
         <p class="text-gray-100 font-bold text-2xl">Gostou do meu trabalho?</p>
         <p class="text-base text-gray-200 leading-[1.4] mt-5 text-center px-4">
           Entre em contato ou acompanhe minhas redes sociais!
         </p>
       </section>
-      <section class="w-full flex flex-col gap-4 mt-10 pb-20">
+      <section
+        class="flex flex-col gap-4 mt-10 pb-20 px-4 mx-auto w-full md:max-w-md"
+      >
         <div
-          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400 mx-10"
+          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400"
         >
           <div class="flex items-center gap-2">
             <img src="./assets/img/linkedin-logo.svg" alt="Logo do Linkedin" />
@@ -341,7 +349,7 @@
         </div>
 
         <div
-          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400 mx-10"
+          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400"
         >
           <div class="flex items-center gap-2">
             <img src="./assets/img/github-logo.svg" alt="Logo do GitHub" />
@@ -359,7 +367,7 @@
         </div>
 
         <div
-          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400 mx-10"
+          class="flex justify-between items-center px-4 py-4 rounded-[8px] bg-gray-400"
         >
           <div class="flex items-center gap-2">
             <img
@@ -383,7 +391,7 @@
 
     <!-- ====== Modal ====== -->
     <div id="modal" class="closeModal hidden fixed inset-0 bg-opacity-50">
-      <div class="w-full h-full relative bg-gray-950 pt-48">
+      <div class="w-full h-full relative bg-gray-950 pt-56 md:pt-0">
         <button
           id="closeModal"
           class="absolute top-2 right-10 text-gray-100 hover:text-red-600 text-2xl font-bold cursor-pointer"
