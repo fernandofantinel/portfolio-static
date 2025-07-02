@@ -24,6 +24,7 @@
 
   <body class="flex flex-col overflow-x-hidden bg-[#16181d] text-gray-200">
     <header
+      role="banner"
       class="md:h-screen md:bg-[url('./assets/img/background_intro.png')] md:bg-cover md:bg-center"
     >
       <!-- ====== Intro ====== -->
@@ -31,7 +32,7 @@
         <img
           class="border-main-red h-56 w-56 rounded-full border-4 object-cover"
           src="./assets/img/photo3_denoised_refined.webp"
-          alt="Foto de Fernando Fantinel"
+          alt="Foto de Fernando Fantinel, desenvolvedor PHP"
         />
       </div>
       <div class="mt-10 flex flex-col gap-2 px-5">
@@ -58,6 +59,7 @@
       <!-- ====== Skills ====== -->
       <div
         class="mx-auto mt-10 flex max-w-[320px] flex-wrap justify-center gap-2 sm:max-w-full"
+        aria-label="Tecnologias que utilizo"
       >
         <div
           class="rounded-full bg-indigo-700 px-3 py-1 leading-[1.2] font-bold text-gray-500"
@@ -87,9 +89,12 @@
       </div>
     </header>
 
-    <main>
+    <main role="main">
       <!-- ====== Projects ====== -->
-      <section class="mt-14 flex flex-col items-center gap-2">
+      <section
+        class="mt-14 flex flex-col items-center gap-2"
+        aria-labelledby="projetos-heading"
+      >
         <h2 class="text-main-red text-xl leading-[1.2]">Meu trabalho</h2>
         <p class="text-2xl leading-[1.2] font-bold text-gray-100">
           Veja os projetos em destaque
@@ -101,7 +106,7 @@
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
-              class="openModal thumb cursor-pointer rounded-[8px]"
+              class="openModal cursor-pointer rounded-[8px]"
               src="./assets/img/portfolio_thumb.png"
               alt="Foto do projeto do portfólio"
             />
@@ -109,14 +114,19 @@
           <div class="mt-4">
             <div class="flex flex-col justify-center gap-2">
               <div class="flex items-center justify-center gap-4">
-                <a href="https://portfolio.fantinel.dev.br" target="_blank">
-                  <span class="leading-tight font-bold text-gray-100"
-                    >Portfólio</span
-                  >
+                <a
+                  href="https://portfolio.fantinel.dev.br"
+                  target="_blank"
+                  aria-label="Abrir página do Portfólio"
+                >
+                  <h3 class="leading-tight font-bold text-gray-100">
+                    Portfólio
+                  </h3>
                 </a>
                 <a
                   href="https://github.com/fernandofantinel/portfolio-static"
                   target="_blank"
+                  aria-label="Abrir GitHub do Portfólio"
                 >
                   <img
                     class="text-gray-300"
@@ -133,6 +143,7 @@
             </div>
             <div
               class="mx-auto mt-5 flex max-w-[240px] flex-wrap justify-center gap-2 sm:max-w-full"
+              aria-label="Tecnologias utilizadas no projeto Portfólio"
             >
               <div class="bg-main-blue rounded-full px-3 py-1">
                 <span class="leading-[1.2] font-bold text-gray-500"
@@ -154,7 +165,7 @@
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
-              class="openModal thumb cursor-pointer rounded-[8px]"
+              class="openModal cursor-pointer rounded-[8px]"
               src="./assets/img/clone-tabnews_thumb.png"
               alt="Foto do projeto Clone Tabnews"
             />
@@ -165,14 +176,16 @@
                 <a
                   href="https://clone-tabnews.fantinel.dev.br/api/v1/status"
                   target="_blank"
+                  aria-label="Abrir página do Clone Tabnews"
                 >
-                  <span class="leading-tight font-bold text-gray-100"
-                    >Clone Tabnews</span
-                  >
+                  <h3 class="leading-tight font-bold text-gray-100">
+                    Clone Tabnews
+                  </h3>
                 </a>
                 <a
                   href="https://github.com/fernandofantinel/clone-tabnews"
                   target="_blank"
+                  aria-label="Abrir GitHub do Clone Tabnews"
                 >
                   <img
                     class="text-gray-300"
@@ -189,6 +202,7 @@
             </div>
             <div
               class="mx-auto mt-5 flex max-w-[320px] flex-wrap justify-center gap-2 sm:max-w-full"
+              aria-label="Tecnologias utilizadas no projeto Clone Tabnews"
             >
               <div class="rounded-full bg-yellow-300 px-3 py-1">
                 <span class="leading-[1.2] font-bold text-gray-500"
@@ -220,7 +234,7 @@
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
-              class="openModal thumb cursor-pointer rounded-[8px]"
+              class="openModal cursor-pointer rounded-[8px]"
               src="./assets/img/devlinks_thumb.png"
               alt="Foto da página pessoal Devlinks"
             />
@@ -228,14 +242,19 @@
           <div class="mt-4">
             <div class="flex flex-col gap-2">
               <div class="flex items-center justify-center gap-4">
-                <a href="https://fantinel.dev.br/" target="_blank">
-                  <span class="leading-tight font-bold text-gray-100"
-                    >Página pessoal</span
-                  >
+                <a
+                  href="https://fantinel.dev.br/"
+                  target="_blank"
+                  aria-label="Abrir página pessoal"
+                >
+                  <h3 class="leading-tight font-bold text-gray-100">
+                    Página pessoal
+                  </h3>
                 </a>
                 <a
                   href="https://github.com/fernandofantinel/devlinks"
                   target="_blank"
+                  aria-label="Abrir GitHub da Página Pessoal"
                 >
                   <img
                     class="text-gray-300"
@@ -250,6 +269,7 @@
             </div>
             <div
               class="mx-auto mt-5 flex max-w-[240px] flex-wrap justify-center gap-2 sm:max-w-full"
+              aria-label="Tecnologias utilizadas no projeto Página Pessoal"
             >
               <div class="bg-main-blue rounded-full px-3 py-1">
                 <span class="leading-[1.2] font-bold text-gray-500">CSS</span>
@@ -269,7 +289,7 @@
         <div class="bg-gray-400 py-5">
           <div class="px-10">
             <img
-              class="openModal thumb cursor-pointer rounded-[8px]"
+              class="openModal cursor-pointer rounded-[8px]"
               src="./assets/img/karaoke-roulette_thumb.png"
               alt="Foto da página Karaoke Roulette"
             />
@@ -277,14 +297,19 @@
           <div class="mt-4">
             <div class="flex flex-col gap-2">
               <div class="flex items-center justify-center gap-4">
-                <a href="https://karaoke-roulette.vercel.app/" target="_blank">
-                  <span class="leading-tight font-bold text-gray-100"
-                    >Karaoke Roulette</span
-                  >
+                <a
+                  href="https://karaoke-roulette.vercel.app/"
+                  target="_blank"
+                  aria-label="Abrir página do Karaoke Roulette"
+                >
+                  <h3 class="leading-tight font-bold text-gray-100">
+                    Karaoke Roulette
+                  </h3>
                 </a>
                 <a
                   href="https://github.com/fernandofantinel/karaoke-roulette"
                   target="_blank"
+                  aria-label="Abrir GitHub do Karaoke Roulette"
                 >
                   <img
                     class="text-gray-300"
@@ -301,6 +326,7 @@
             </div>
             <div
               class="mx-auto mt-5 flex flex-wrap justify-center gap-2 px-5 sm:max-w-full"
+              aria-label="Tecnologias utilizadas no projeto Karaoke Roulette"
             >
               <div class="rounded-full bg-sky-400 px-3 py-1">
                 <span class="leading-[1.2] font-bold text-gray-500"
@@ -329,9 +355,13 @@
 
     <footer
       class="md:h-screen md:bg-[url('./assets/img/background_contacts.png')] md:bg-cover md:bg-center"
+      role="contentinfo"
     >
       <!-- ====== Contacts ====== -->
-      <section class="mt-10 flex flex-col items-center gap-2 md:mt-36">
+      <section
+        class="mt-10 flex flex-col items-center gap-2 md:mt-36"
+        aria-labelledby="contato-heading"
+      >
         <h2 class="text-main-red text-xl leading-[1.2]">Contato</h2>
         <p class="text-2xl font-bold text-gray-100">Gostou do meu trabalho?</p>
         <p class="mt-5 px-4 text-center text-base leading-[1.4] text-gray-200">
@@ -352,11 +382,12 @@
             <a
               href="https://www.linkedin.com/in/fernando-fantinel/"
               target="_blank"
+              aria-label="Abrir LinkedIn de Fernando Fantinel"
             >
               <img
                 class="text-main-blue"
                 src="./assets/img/arrow-up-right.svg"
-                alt="Seta para cima e direita"
+                alt="Abrir em nova aba"
               />
             </a>
           </div>
@@ -370,11 +401,15 @@
             <span class="text-gray-200">GitHub</span>
           </div>
           <div>
-            <a href="https://github.com/fernandofantinel" target="_blank">
+            <a
+              href="https://github.com/fernandofantinel"
+              target="_blank"
+              aria-label="Abrir GitHub de Fernando Fantinel"
+            >
               <img
                 class="text-main-blue"
                 src="./assets/img/arrow-up-right.svg"
-                alt="Seta para cima e direita"
+                alt="Abrir em nova aba"
               />
             </a>
           </div>
@@ -391,11 +426,15 @@
             <span class="text-gray-200">E-mail</span>
           </div>
           <div>
-            <a href="mailto:fantinel89+contato@gmail.com" target="_blank">
+            <a
+              href="mailto:fantinel89+contato@gmail.com"
+              target="_blank"
+              aria-label="Enviar e-mail para Fernando Fantinel"
+            >
               <img
                 class="text-main-blue"
                 src="./assets/img/arrow-up-right.svg"
-                alt="Seta para cima e direita"
+                alt="Abrir em nova aba"
               />
             </a>
           </div>
@@ -404,16 +443,28 @@
     </footer>
 
     <!-- ====== Modal ====== -->
-    <div id="modal" class="closeModal bg-opacity-50 fixed inset-0 hidden">
+    <div
+      id="modal"
+      class="closeModal bg-opacity-50 fixed inset-0 hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-image-label"
+    >
       <div class="relative h-full w-full bg-gray-950 pt-56 md:pt-0">
         <button
           id="closeModal"
+          aria-label="Fechar modal"
           class="absolute top-2 right-10 cursor-pointer text-2xl font-bold text-gray-100 hover:text-red-600"
         >
           &times;
         </button>
         <div class="flex justify-center px-4 py-4">
-          <img id="modal-image" class="h-full rounded-2xl" src="" alt="" />
+          <img
+            id="modal-image"
+            class="h-full rounded-2xl"
+            src=""
+            alt="Imagem ampliada do projeto"
+          />
         </div>
       </div>
     </div>
